@@ -38,3 +38,22 @@
 /* Operations */
 @import "./operations/diff.css";
 @import "./operations/json.css";
+
+.chadcn-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+
+  .chadcn-input:focus {
+    border-color: #00c1cf;
+    box-shadow: 0 0 5px rgba(0, 193, 207, 0.4);
+  }
+
+  .chadcn-input::placeholder {
+    color: #888;
+  }

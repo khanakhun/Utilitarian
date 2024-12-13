@@ -61,6 +61,8 @@
     "copy-webpack-plugin": "^12.0.2",
     "core-js": "^3.37.1",
     "css-loader": "7.1.2",
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8",
     "eslint": "^9.4.0",
     "eslint-plugin-jsdoc": "^48.2.9",
     "globals": "^15.4.0",
@@ -196,6 +198,26 @@
     "newop": "node --experimental-modules --experimental-json-modules src/core/config/scripts/newOperation.mjs",
     "minor": "node --experimental-modules --experimental-json-modules src/core/config/scripts/newMinorVersion.mjs",
     "getheapsize": "node -e 'console.log(`node heap limit = ${require(\"v8\").getHeapStatistics().heap_size_limit / (1024 * 1024)} Mb`)'",
-    "setheapsize": "export NODE_OPTIONS=--max_old_space_size=2048"
+    "setheapsize": "export NODE_OPTIONS=--max_old_space_size=2048",
+    "electron": "electron electron-main.js",
+    "build:mac": "electron-builder build --mac",
+    "build:linux": "electron-builder build --linux",
+    "build:all": "electron-builder build --mac --linux"
+  },
+  "build": {
+    "appId": "com.yourcompany.yourapp",
+    "productName": "Utilit",
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": ["dmg", "zip"]
+    },
+    "linux": {
+      "target": ["AppImage", "deb"],
+      "category": "Utility"
+    },
+    "directories": {
+      "output": "dist",
+      "buildResources": "build-resources"
+    }
   }
 }

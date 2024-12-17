@@ -45,7 +45,7 @@
     --secondary-border-colour: var(--base01);
 
     --title-colour: var(--base1);
-    --title-weight: bold;
+    --title-weight: lighter;
     --title-background-colour: var(--base02);
 
     --banner-font-colour: var(--base0);

@@ -154,7 +154,7 @@ class BackgroundWorkerWaiter {
      * @param {Object} response
      */
     magicComplete(response) {
-        log.debug("--- Background Magic Bake complete ---");
+        log.debug("--- Background Magic Calculate complete ---");
         if (!response || response.error) return;
 
         this.manager.output.backgroundMagicResult(response.dish.value);

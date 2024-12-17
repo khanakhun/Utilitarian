@@ -419,7 +419,7 @@ class RecipeWaiter {
         // Disable auto-bake if this is a manual op
         if (op.manualBake && this.app.autoBake_) {
             this.manager.controls.setAutoBake(false);
-            this.app.alert("Auto-Bake is disabled by default when using this operation.", 5000);
+            this.app.alert("Auto-Calculate is disabled by default when using this operation.", 5000);
         }
     }
 
@@ -624,11 +624,11 @@ class RecipeWaiter {
     adjustWidth() {
         const recList = document.getElementById("rec-list");
 
-        // Hide Chef icon on Bake button if the page is compressed
+        // Hide Chef icon on Calculate button if the page is compressed
         const bakeIcon = document.querySelector("#bake img");
 
         if (recList.clientWidth < 370) {
-            // Hide Chef icon on Bake button
+            // Hide Chef icon on Calculate button
             bakeIcon.style.display = "none";
         } else {
             bakeIcon.style.display = "inline-block";

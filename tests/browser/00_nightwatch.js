@@ -227,7 +227,7 @@ module.exports = {
     },
 
     "Alert bar": browser => {
-        // Bake nothing to create an empty output which can be copied
+        // Calculate nothing to create an empty output which can be copied
         utils.clear(browser);
         utils.bake(browser);
 

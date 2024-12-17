@@ -106,12 +106,12 @@ select.custom-file-control:not([size]):not([multiple]) {
     color: var(--primary-font-colour);
 }
 
-.form-control,
+/* .form-control,
 .is-focused .form-control {
     background-image:
         linear-gradient(to top, var(--input-highlight-colour) 2px, rgba(0, 0, 0, 0) 2px),
         linear-gradient(to top, var(--primary-border-colour) 1px, rgba(0, 0, 0, 0) 1px);
-}
+} */
 
 code {
     border: 0;

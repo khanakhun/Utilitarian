@@ -27,14 +27,14 @@ body {
 
 div#operations,
 div#recipe {
-    width: 50%;
+    width: 100%;
     height: 100%;
 }
 
 div#input,
 div#output {
     width: 100%;
-    height: 50%;
+    height: 100%;
 }
 
 .split {

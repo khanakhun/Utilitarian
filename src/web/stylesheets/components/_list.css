@@ -13,10 +13,11 @@
 }
 
 .category-title {
+    font-size: 21px;
     display: block;
     padding: 10px;
-    background-color: var(--secondary-background-colour);
-    border-bottom: 1px solid var(--secondary-border-colour);
+    /* background-color: var(--secondary-background-colour); */
+    /* border-bottom: 1px solid var(--secondary-border-colour); */
     font-weight: var(--title-weight);
 }
 

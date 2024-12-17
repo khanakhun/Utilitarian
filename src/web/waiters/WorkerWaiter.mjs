@@ -196,7 +196,7 @@ class WorkerWaiter {
 
         switch (r.action) {
             case "bakeComplete":
-                log.debug(`Bake ${inputNum} complete.`);
+                log.debug(`Calculate ${inputNum} complete.`);
                 this.manager.timing.recordTime("bakeComplete", inputNum);
                 this.manager.timing.recordTime("bakeDuration", inputNum, r.data.duration);
 
@@ -452,7 +452,7 @@ class WorkerWaiter {
 
         document.getElementById("bake").style.background = "";
         this.totalOutputs = 0; // Reset for next time
-        log.debug("--- Bake complete ---");
+        log.debug("--- Calculate complete ---");
     }
 
     /**

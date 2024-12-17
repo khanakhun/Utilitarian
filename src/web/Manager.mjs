@@ -224,7 +224,7 @@ class Manager {
 
 
         // Options
-        // document.getElementById("options").addEventListener("click", this.options.optionsClick.bind(this.options));
+        document.getElementById("options").addEventListener("click", this.options.optionsClick.bind(this.options));
         document.getElementById("reset-options").addEventListener("click", this.options.resetOptionsClick.bind(this.options));
         this.addDynamicListener(".option-item input[type=checkbox]", "change", this.options.switchChange, this.options);
         this.addDynamicListener(".option-item input[type=checkbox]#wordWrap", "change", this.options.setWordWrap, this.options);

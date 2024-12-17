@@ -26,14 +26,14 @@
     --secondary-border-colour: #3c3c3c;
 
     --title-colour: #fff;
-    --title-weight: bold;
+    --title-weight: lighter;
     --title-background-colour: #333;
 
     --banner-font-colour: #c5c5c5;
     --banner-bg-colour: #252525;
     --banner-url-colour: #1976d2;
 
-    --category-list-font-colour: #1976d2;
+    --category-list-font-colour: #ffffff;
 
     --loader-background-colour: var(--secondary-border-colour);
     --loader-outer-colour: #3498db;

@@ -65,7 +65,7 @@ You can use as many operations as you like in simple or complex ways. Some examp
  - Drag and drop
      - Operations can be dragged in and out of the recipe list, or reorganised.
      - Files up to 2GB can be dragged over the input box to load them directly into the browser.
- - Auto Bake
+ - Auto Calculate
      - Whenever you modify the input or the recipe, CyberChef will automatically "bake" for you and produce the output immediately.
      - This can be turned off and operated manually if it is affecting performance (if the input is very large, for instance).
  - Automated encoding detection

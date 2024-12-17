@@ -158,7 +158,8 @@
 
 #input-wrapper,
 #output-wrapper {
-    height: calc(100% - var(--title-height));
+    /* height: calc(100% - var(--title-height)); */
+    height: 100%;
 }
 
 #input-wrapper.show-tabs,

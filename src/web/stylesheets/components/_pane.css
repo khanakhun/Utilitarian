@@ -37,9 +37,9 @@
 }
 
 .list-area {
-    position: absolute;
-    top: var(--title-height);
-    bottom: 0;
+    /* position: absolute; */
+    /* top: var(--title-height); */
+    /* bottom: 0; */
     width: 100%;
     list-style-type: none;
     margin: 0;

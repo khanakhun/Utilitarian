@@ -5,7 +5,7 @@
  */
 
 /**
- * Waiter to handle keybindings to CyberChef functions (i.e. Bake, Step, Save, Load etc.)
+ * Waiter to handle keybindings to CyberChef functions (i.e. Calculate, Step, Save, Load etc.)
  */
 class BindingsWaiter {
 
@@ -96,7 +96,7 @@ class BindingsWaiter {
                         // do nothing, just don't throw an error
                     }
                     break;
-                case "Space": // Bake
+                case "Space": // Calculate
                     e.preventDefault();
                     this.manager.controls.bakeClick();
                     break;
@@ -215,7 +215,7 @@ class BindingsWaiter {
             <td>Ctrl+${modMac}+b</td>
         </tr>
         <tr>
-            <td>Bake</td>
+            <td>Calculate</td>
             <td>Ctrl+${modWinLin}+Space</td>
             <td>Ctrl+${modMac}+Space</td>
         </tr>

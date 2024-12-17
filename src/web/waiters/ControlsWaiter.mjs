@@ -9,7 +9,7 @@ import { eolSeqToCode } from "../utils/editorUtils.mjs";
 
 
 /**
- * Waiter to handle events related to the CyberChef controls (i.e. Bake, Step, Save, Load etc.)
+ * Waiter to handle events related to the CyberChef controls (i.e. Calculate, Step, Save, Load etc.)
  */
 class ControlsWaiter {
 
@@ -45,9 +45,9 @@ class ControlsWaiter {
 
 
     /**
-     * Checks or unchecks the Auto Bake checkbox based on the given value.
+     * Checks or unchecks the Auto Calculate checkbox based on the given value.
      *
-     * @param {boolean} value - The new value for Auto Bake.
+     * @param {boolean} value - The new value for Auto Calculate.
      */
     setAutoBake(value) {
         const autoBakeCheckbox = document.getElementById("auto-bake");
@@ -63,7 +63,7 @@ class ControlsWaiter {
      */
     bakeClick() {
         const btnBake = document.getElementById("bake");
-        if (btnBake.textContent.indexOf("Bake") > 0) {
+        if (btnBake.textContent.indexOf("Calculate") > 0) {
             this.app.manager.input.bakeAll();
         } else if (btnBake.textContent.indexOf("Cancel") > 0) {
             this.manager.worker.cancelBake(false, true);
@@ -80,7 +80,7 @@ class ControlsWaiter {
 
 
     /**
-     * Handler for changes made to the Auto Bake checkbox.
+     * Handler for changes made to the Auto Calculate checkbox.
      */
     autoBakeChange() {
         this.app.autoBake_ = document.getElementById("auto-bake").checked;
@@ -424,7 +424,7 @@ ${navigator.userAgent}
 
 
     /**
-     * Switches the Bake button between 'Bake', 'Cancel' and 'Loading' functions.
+     * Switches the Calculate button between 'Calculate', 'Cancel' and 'Loading' functions.
      *
      * @param {string} func - The function to change to. Either "cancel", "loading" or "bake"
      */
@@ -448,7 +448,7 @@ ${navigator.userAgent}
                 break;
             default:
                 bakeButton.style.background = "";
-                btnText.innerText = "Bake!";
+                btnText.innerText = "Calculate!";
                 bakeButton.classList.remove("btn-danger");
                 bakeButton.classList.remove("btn-warning");
                 bakeButton.classList.add("btn-success");

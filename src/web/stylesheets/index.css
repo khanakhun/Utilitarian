@@ -47,13 +47,66 @@
     border-radius: 8px;
     outline: none;
     transition: border-color 0.3s, box-shadow 0.3s;
-  }
+}
 
-  .chadcn-input:focus {
+.chadcn-input:focus {
     border-color: #00c1cf;
     box-shadow: 0 0 5px rgba(0, 193, 207, 0.4);
-  }
+}
 
-  .chadcn-input::placeholder {
+.chadcn-input::placeholder {
     color: #888;
-  }
+}
+
+.card {
+    background-color: #2b2b2b;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    height: 50vh;
+}
+
+.card-header {
+    background-color: #3a3a3a;
+    border-bottom: none;
+    padding-bottom: 0 !important;
+}
+.card-body {
+    overflow-y: auto;
+    max-height: calc(
+        90vh - 120px
+    ); /* Subtract the card header and footer height */
+}
+.output-card {
+    height: 48% !important;
+}
+
+.card-title {
+    font-weight: 500;
+    /* border-bottom: 1px solid; */
+}
+
+.btn {
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004a99;
+}
+
+.form-control {
+    background-color: #3a3a3a;
+    border: none;
+    color: #f1f1f1;
+}
+
+.form-control:focus {
+    background-color: #4a4a4a;
+    box-shadow: none;
+}

@@ -170,7 +170,7 @@ class OperationsWaiter {
         this.manager.recipe.createSortableSeedList(e.target);
 
         // Populate ops total
-        document.querySelector("#operations .title .op-count").innerText = Object.keys(this.app.operations).length;
+        document.querySelector("#operations .op-count").innerText = Object.keys(this.app.operations).length;
 
         this.enableOpsListPopovers(e.target);
     }

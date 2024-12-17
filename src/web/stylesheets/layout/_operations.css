@@ -8,8 +8,8 @@
 
 .op-list .operation {
     color: var(--op-list-operation-font-colour);
-    background-color: var(--op-list-operation-bg-colour);
-    border-color: var(--op-list-operation-border-colour);
+    background-color: #2b2b2b;
+    border-color: #2b2b2b;
 }
 
 #search {

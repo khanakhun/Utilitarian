@@ -11,8 +11,9 @@
     width: 100%;
     bottom: 0;
     padding: 10px 0;
-    border-top: 1px solid var(--primary-border-colour);
-    background-color: var(--secondary-background-colour);
+    /* border-top: 1px solid var(--primary-border-colour); */
+    /* background-color: var(--secondary-background-colour); */
+    left: 0;
 }
 
 #controls-content {

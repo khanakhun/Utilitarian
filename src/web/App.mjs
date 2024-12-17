@@ -58,7 +58,7 @@ class App {
     setup() {
         document.dispatchEvent(this.manager.appstart);
 
-        this.initialiseSplitter();
+        // this.initialiseSplitter();
         this.loadLocalStorage();
         this.populateOperationsList();
         this.manager.setup();
@@ -96,7 +96,7 @@ class App {
             document.getElementById("loader-wrapper").remove();
             document.body.classList.remove("loaded");
 
-            // Bake initial input
+            // Calculate initial input
             this.manager.input.bakeAll();
         }.bind(this), 1000);
 
@@ -151,7 +151,7 @@ class App {
 
 
     /**
-     * Runs Auto Bake if it is set.
+     * Runs Auto Calculate if it is set.
      */
     autoBake() {
         if (this.baking) {

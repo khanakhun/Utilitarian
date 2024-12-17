@@ -510,7 +510,7 @@ export function ipv6Compare(a, b) {
     return 0;
 }
 
-const _LARGE_RANGE_ERROR = "The specified range contains more than 65,536 addresses. Running this query could crash your browser. If you want to run it, select the \"Allow large queries\" option. You are advised to turn off \"Auto Bake\" whilst editing large ranges.";
+const _LARGE_RANGE_ERROR = "The specified range contains more than 65,536 addresses. Running this query could crash your browser. If you want to run it, select the \"Allow large queries\" option. You are advised to turn off \"Auto Calculate\" whilst editing large ranges.";
 
 /**
  * A regular expression that matches an IPv4 address

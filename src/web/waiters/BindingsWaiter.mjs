@@ -5,15 +5,15 @@
  */
 
 /**
- * Waiter to handle keybindings to CyberChef functions (i.e. Calculate, Step, Save, Load etc.)
+ * Waiter to handle keybindings to Utilitarian functions (i.e. Calculate, Step, Save, Load etc.)
  */
 class BindingsWaiter {
 
     /**
      * BindingsWaiter constructor.
      *
-     * @param {App} app - The main view object for CyberChef.
-     * @param {Manager} manager - The CyberChef event manager.
+     * @param {App} app - The main view object for Utilitarian.
+     * @param {Manager} manager - The Utilitarian event manager.
      */
     constructor(app, manager) {
         this.app = app;

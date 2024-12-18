@@ -1,5 +1,5 @@
 <!-- htmlmin:ignore --><!--
-    CyberChef - The Cyber Swiss Army Knife
+    Utilitarian - The Cyber Swiss Army Knife
 
     @copyright Crown Copyright 2016-<%= htmlWebpackPlugin.options.compileYear %>
     @license Apache-2.0
@@ -23,7 +23,7 @@
 <html lang="en" class="dark">
     <head>
         <meta charset="UTF-8">
-        <title>CyberChef</title>
+        <title>Utilitarian</title>
 
         <meta name="copyright" content="Crown Copyright 2016-<%= htmlWebpackPlugin.options.compileYear %>" />
         <meta name="description" content="The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis" />
@@ -123,11 +123,11 @@
                 document.getElementById("preloader").remove();
                 document.getElementById("preloader-msg").remove();
                 document.getElementById("preloader-error").innerHTML =
-                    "CyberChef encountered an error while loading.<br><br>" +
+                    "Utilitarian encountered an error while loading.<br><br>" +
                     "The following browser versions are supported:" +
                     "<ul><li>Google Chrome 50+</li><li>Mozilla Firefox 38+</li></ul>" +
                     "Your user agent is:<br>" + escapeHtml(navigator.userAgent) + "<br><br>" +
-                    "If your browser is supported, please <a href='https://github.com/gchq/CyberChef/issues/new/choose'>" +
+                    "If your browser is supported, please <a href='https://github.com/gchq/Utilitarian/issues/new/choose'>" +
                     "raise an issue</a> including the following details:<br><br>" +
                     "<pre>" + escapeHtml(msg) + "</pre>";
             };
@@ -154,13 +154,13 @@
                   <!-- <input type="text" id="search" class="chadcn-input" placeholder="Search..." autocomplete="off"  data-help-title="Searching for operations" data-help="<p>Use the search box to find useful operations.</p><p>Both operation names and descriptions are queried using a fuzzy matching algorithm.</p>"> -->
                 </form>
                 <div class="col" style="text-align: right; padding-right: 0;">
-                    <a href="#" id="options" data-help-title="Options and Settings" data-help="Configurable options to change how CyberChef behaves. These settings are stored in your browser's local storage, meaning they will persist between sessions that use the same browser profile."> <i class="material-icons">settings</i></a>
+                    <a href="#" id="options" data-help-title="Options and Settings" data-help="Configurable options to change how Utilitarian behaves. These settings are stored in your browser's local storage, meaning they will persist between sessions that use the same browser profile."> <i class="material-icons">settings</i></a>
                 </div>
             </nav>
             <!-- <div id="banner" class="row">
 
                 <div class="col" style="text-align: left; padding-left: 10px;">
-                    <a href="#" data-toggle="modal" data-target="#download-modal" data-help-title="Downloading CyberChef" data-help="<p>CyberChef can be downloaded to run locally or hosted within your own network. It has no server-side component so all that is required is that the ZIP file is uncompressed and the files are accessible.</p><p>As a user, it is worth noting that unofficial versions of CyberChef could have been modified to introduce Input and/or Recipe exfiltration. We recommend always using the official, open source, up-to-date version of CyberChef hosted at <a href='https://gchq.github.io/CyberChef'>https://gchq.github.io/CyberChef</a> if accessible.</p><p>The Network tab in your browser's Developer console (F12) can be used to inspect the network requests made by a website. This can confirm that no data is uploaded when a CyberChef recipe is baked.</p>">Download CyberChef <i class="material-icons">file_download</i></a>
+                    <a href="#" data-toggle="modal" data-target="#download-modal" data-help-title="Downloading Utilitarian" data-help="<p>Utilitarian can be downloaded to run locally or hosted within your own network. It has no server-side component so all that is required is that the ZIP file is uncompressed and the files are accessible.</p><p>As a user, it is worth noting that unofficial versions of Utilitarian could have been modified to introduce Input and/or Chain exfiltration. We recommend always using the official, open source, up-to-date version of Utilitarian hosted at <a href='https://gchq.github.io/Utilitarian'>https://gchq.github.io/Utilitarian</a> if accessible.</p><p>The Network tab in your browser's Developer console (F12) can be used to inspect the network requests made by a website. This can confirm that no data is uploaded when a Utilitarian recipe is baked.</p>">Download Utilitarian <i class="material-icons">file_download</i></a>
                 </div>
                 <div class="col-md-6" id="notice-wrapper">
                     <span id="notice">
@@ -176,8 +176,8 @@
                 </div>
 
                 <div class="col" style="text-align: right; padding-right: 0;">
-                    <a href="#" id="options" data-help-title="Options and Settings" data-help="Configurable options to change how CyberChef behaves. These settings are stored in your browser's local storage, meaning they will persist between sessions that use the same browser profile.">Options <i class="material-icons">settings</i></a>
-                    <a href="#" id="support" data-toggle="modal" data-target="#support-modal" data-help-title="About / Support" data-help="This pane provides information about the CyberChef web app, how to use some of the features, and how to raise bug reports.">About / Support <i class="material-icons">help</i></a>
+                    <a href="#" id="options" data-help-title="Options and Settings" data-help="Configurable options to change how Utilitarian behaves. These settings are stored in your browser's local storage, meaning they will persist between sessions that use the same browser profile.">Options <i class="material-icons">settings</i></a>
+                    <a href="#" id="support" data-toggle="modal" data-target="#support-modal" data-help-title="About / Support" data-help="This pane provides information about the Utilitarian web app, how to use some of the features, and how to raise bug reports.">About / Support <i class="material-icons">help</i></a>
                 </div>
             </div> -->
             <div id="workspace-wrapper container-fluid h-100">
@@ -197,20 +197,20 @@
                       </div>
                     </div>
                     <div class="col-12 col-md-4 p-3">
-                      <div class="card split split-horizontal no-select h-100" id="recipe" data-help-title="Recipe pane" data-help="<p>The Recipe pane is where your chosen Operations are configured. If you are a programmer, think of these as functions. If you are not a programmer, these are like steps in a cake recipe. The Input data will be processed based on the Operations in your Recipe.</p><ul><li>To reorder, simply drag and drop the Operations into the order your require</li><li>To remove an operation, either double click it, or drag it outside of the Recipe pane</li></ul><p>The arguments (or 'Ingredients' in CyberChef terminology) can be configured to change how an Operation processes the data.</p>" >
+                      <div class="card split split-horizontal no-select h-100" id="recipe" data-help-title="Chain pane" data-help="<p>The Chain pane is where your chosen Operations are configured. If you are a programmer, think of these as functions. If you are not a programmer, these are like steps in a cake recipe. The Input data will be processed based on the Operations in your Chain.</p><ul><li>To reorder, simply drag and drop the Operations into the order your require</li><li>To remove an operation, either double click it, or drag it outside of the Chain pane</li></ul><p>The arguments (or 'Ingredients' in Utilitarian terminology) can be configured to change how an Operation processes the data.</p>" >
                         <div class="card-header">
-                          <h5 class="card-title">Recipe</h5>
+                          <h5 class="card-title">Chain</h5>
                           <span class="pane-controls hide-on-maximised-output">
-                            <button type="button" aria-label="Hide arguments" class="btn btn-primary bmd-btn-icon" id="hide-icon" data-toggle="tooltip" title="Hide arguments" hide-args="false" data-help-title="Hiding every Operation's argument view in a Recipe" data-help="Clicking 'Hide arguments' will hide all the argument views for every Operation in the Recipe, to save space when you have too many Operation in your Recipe">
+                            <button type="button" aria-label="Hide arguments" class="btn btn-primary bmd-btn-icon" id="hide-icon" data-toggle="tooltip" title="Hide arguments" hide-args="false" data-help-title="Hiding every Operation's argument view in a Chain" data-help="Clicking 'Hide arguments' will hide all the argument views for every Operation in the Chain, to save space when you have too many Operation in your Chain">
                                 <i class="material-icons">keyboard_arrow_up</i>
                             </button>
-                            <button type="button" aria-label="Save recipe" class="btn btn-primary bmd-btn-icon" id="save" data-toggle="tooltip" title="Save recipe" data-help-title="Saving a recipe" data-help="<p>Recipes can be represented in a few different formats and saved for use at a later date. You can either copy the Recipe configuration and save it somewhere offline for later use, or use your browser's local storage.</p><ul><li><b>Deep link:</b> The easiest way to share a CyberChef Recipe is to copy the deep link, either from the address bar (which is updated as the Recipe or Input changes), or from the 'Save recipe' pane. When you visit this link, the Recipe and Input will be populated from where you left off.</li><li><b>Chef format:</b> This custom format is designed to be compact and easily readable. It is the format used in CyberChef's URL, so it largely uses characters that do not have to be escaped in URL encoding, making it a little easier to understand what a CyberChef URL contains.</li><li><b>Clean JSON:</b> This JSON format uses whitespace and indentation in a way that makes the Recipe easy to read.</li><li><b>Compact JSON:</b> This is the most compact way that the Recipe can be represented in JSON.</li><li><b>Local storage:</b> Alternatively, you can enter a name into the 'Recipe name' field and save to your browser's local storage. The Recipe will then be available to load from the 'Load Recipe' pane as long as you are using the same browser profile. Be aware that if your browser profile is cleaned, you may lose this data.</li></ul>">
+                            <button type="button" aria-label="Save chain" class="btn btn-primary bmd-btn-icon" id="save" data-toggle="tooltip" title="Save recipe" data-help-title="Saving a recipe" data-help="<p>Recipes can be represented in a few different formats and saved for use at a later date. You can either copy the Chain configuration and save it somewhere offline for later use, or use your browser's local storage.</p><ul><li><b>Deep link:</b> The easiest way to share a Utilitarian Chain is to copy the deep link, either from the address bar (which is updated as the Chain or Input changes), or from the 'Save recipe' pane. When you visit this link, the Chain and Input will be populated from where you left off.</li><li><b>Chef format:</b> This custom format is designed to be compact and easily readable. It is the format used in Utilitarian's URL, so it largely uses characters that do not have to be escaped in URL encoding, making it a little easier to understand what a Utilitarian URL contains.</li><li><b>Clean JSON:</b> This JSON format uses whitespace and indentation in a way that makes the Chain easy to read.</li><li><b>Compact JSON:</b> This is the most compact way that the Chain can be represented in JSON.</li><li><b>Local storage:</b> Alternatively, you can enter a name into the 'Chain name' field and save to your browser's local storage. The Chain will then be available to load from the 'Load Chain' pane as long as you are using the same browser profile. Be aware that if your browser profile is cleaned, you may lose this data.</li></ul>">
                                 <i class="material-icons" aria-hidden="true">save</i>
                             </button>
-                            <button type="button" aria-label="Load recipe" class="btn btn-primary bmd-btn-icon" id="load" data-toggle="tooltip" title="Load recipe" data-help-title="Loading a recipe" data-help="<p>Saved recipes can be loaded using one of the following methods:</p><ul><li>If you have a CyberChef deep link, simply visit that link and the Recipe and Input will be populated automatically.</li><li>If you have a Recipe string in any of the accepted formats, paste it into the 'Load recipe' pane textbox and click 'Load'.</li><li>If you have saved a Recipe to your browser's local storage, it should be available in the dropdown menu in the 'Load recipe' pane. If it is not there, you may not be using the same browser profile, or your profile may have been cleared.</li></ul>">
+                            <button type="button" aria-label="Load chain" class="btn btn-primary bmd-btn-icon" id="load" data-toggle="tooltip" title="Load recipe" data-help-title="Loading a recipe" data-help="<p>Saved recipes can be loaded using one of the following methods:</p><ul><li>If you have a Utilitarian deep link, simply visit that link and the Chain and Input will be populated automatically.</li><li>If you have a Chain string in any of the accepted formats, paste it into the 'Load recipe' pane textbox and click 'Load'.</li><li>If you have saved a Chain to your browser's local storage, it should be available in the dropdown menu in the 'Load recipe' pane. If it is not there, you may not be using the same browser profile, or your profile may have been cleared.</li></ul>">
                                 <i class="material-icons" aria-hidden="true">folder</i>
                             </button>
-                            <button type="button" aria-label="Clear recipe" class="btn btn-primary bmd-btn-icon" id="clr-recipe" data-toggle="tooltip" title="Clear recipe" data-help-title="Clearing a recipe" data-help="Clicking the 'Clear recipe' button will remove all operations from the Recipe. It will not clear the Input, but it will trigger a Calculate if Auto-bake is turned on, which will change the value of the Output.">
+                            <button type="button" aria-label="Clear chain" class="btn btn-primary bmd-btn-icon" id="clr-recipe" data-toggle="tooltip" title="Clear recipe" data-help-title="Clearing a recipe" data-help="Clicking the 'Clear recipe' button will remove all operations from the Chain. It will not clear the Input, but it will trigger a Calculate if Auto-bake is turned on, which will change the value of the Output.">
                                 <i class="material-icons" aria-hidden="true">delete</i>
                             </button>
                         </span>
@@ -222,17 +222,17 @@
 
                                 <div id="controls" class="no-select hide-on-maximised-output">
                                     <div id="controls-content">
-                                        <button type="button" class="mx-2 btn btn-lg btn-secondary" id="step" data-toggle="tooltip" title="Step through the recipe" data-help-title="Stepping through the Recipe" data-help="<p>The Step button allows you to execute one operation at a time, rather than running the whole Recipe from beginning to end.</p><p>Step allows you to inspect the data at each stage of the Recipe and understand what is being passed to the next operation.</p>">
+                                        <button type="button" class="mx-2 btn btn-lg btn-secondary" id="step" data-toggle="tooltip" title="Step through the recipe" data-help-title="Stepping through the Chain" data-help="<p>The Step button allows you to execute one operation at a time, rather than running the whole Chain from beginning to end.</p><p>Step allows you to inspect the data at each stage of the Chain and understand what is being passed to the next operation.</p>">
                                             Step
                                         </button>
 
-                                        <button type="button" class="mx-2 btn btn-lg btn-success btn-raised btn-block" id="bake" data-help-title="Baking" data-help="<p>Baking causes CyberChef to run the Recipe against your data. This involves three steps:</p><ol><li>The data in the Input is encoded into bytes using the character encoding selected in the Input status bar.</li><li>The data is run through each of the operations in the Recipe in turn with the output of one operation being fed into the next operation as its input.</li><li>The outcome of the final operation in the Recipe is decoded into Output text using the character encoding selected in the Output status bar.</li></ol><p>If there are multiple Inputs, the Calculate button causes every Input to be baked simultaneously.</p>">
+                                        <button type="button" class="mx-2 btn btn-lg btn-success btn-raised btn-block" id="bake" data-help-title="Baking" data-help="<p>Baking causes Utilitarian to run the Chain against your data. This involves three steps:</p><ol><li>The data in the Input is encoded into bytes using the character encoding selected in the Input status bar.</li><li>The data is run through each of the operations in the Chain in turn with the output of one operation being fed into the next operation as its input.</li><li>The outcome of the final operation in the Chain is decoded into Output text using the character encoding selected in the Output status bar.</li></ol><p>If there are multiple Inputs, the Calculate button causes every Input to be baked simultaneously.</p>">
                                             <img aria-hidden="true" src="<%- require('../static/images/cook_male-32x32.png') %>" alt="Chef Icon"/>
                                             <span>Calculate!</span>
                                         </button>
 
                                         <div class="form-group" style="display: contents;">
-                                            <div class="mx-1 checkbox" data-help-title="Auto-bake" data-help="<p>When Auto-bake is turned on, CyberChef will bake the Input using the Recipe whenever anything in the Input or Recipe changes.</p>This includes:<ul><li>Adding or removing operations</li><li>Modifying operation arguments</li><li>Editing the Input</li><li>Changing the Input character encoding</li></ul><p>If there are multiple inputs, only the currently active tab will be baked when Auto-bake triggers. You can bake all inputs manually using the Calculate button.</p>">
+                                            <div class="mx-1 checkbox" data-help-title="Auto-bake" data-help="<p>When Auto-bake is turned on, Utilitarian will bake the Input using the Chain whenever anything in the Input or Chain changes.</p>This includes:<ul><li>Adding or removing operations</li><li>Modifying operation arguments</li><li>Editing the Input</li><li>Changing the Input character encoding</li></ul><p>If there are multiple inputs, only the currently active tab will be baked when Auto-bake triggers. You can bake all inputs manually using the Calculate button.</p>">
                                                 <label id="auto-bake-label">
                                                     <input type="checkbox" checked="checked" id="auto-bake">
                                                     <br>Auto Calculate
@@ -246,7 +246,7 @@
                       </div>
                     </div>
                     <div class="col-12 col-md-5 p-3" id="IO">
-                      <div class="card h-50" id="input" data-help-title="Input pane" data-help="<p>Input data can be entered by typing it in, pasting it in, dragging it in, or using the 'Load file' or 'Load folder' buttons.</p><p>CyberChef does its best to represent data as accurately as possible to ensure you know exactly what you are working with. Non-printable characters are represented using control character pictures, for example a null byte (0x00) is displayed like this: <span title='Control character null' aria-label='Control character null' class='cm-specialChar'>␀</span>.</p>">
+                      <div class="card h-50" id="input" data-help-title="Input pane" data-help="<p>Input data can be entered by typing it in, pasting it in, dragging it in, or using the 'Load file' or 'Load folder' buttons.</p><p>Utilitarian does its best to represent data as accurately as possible to ensure you know exactly what you are working with. Non-printable characters are represented using control character pictures, for example a null byte (0x00) is displayed like this: <span title='Control character null' aria-label='Control character null' class='cm-specialChar'>␀</span>.</p>">
                         <div class="card-header">
                           <h5 class="card-title">Input</h5>
                           <span class="pane-controls">
@@ -254,18 +254,18 @@
                             <button type="button" aria-label="Add new input tab" class="btn btn-primary bmd-btn-icon" id="btn-new-tab" data-toggle="tooltip" title="Add a new input tab" data-help-title="Tabs" data-help="<p>New tabs can be created to support multiple Inputs. These tabs have their own associated character encodings and EOL separators, as defined in their status bars.</p><p>The deep link in the URL bar only contains information about the currently active tab.</p>">
                                 <i class="material-icons" aria-hidden="true">add</i>
                             </button>
-                            <button type="button" aria-label="Open folder as input" class="btn btn-primary bmd-btn-icon" id="btn-open-folder" data-toggle="tooltip" title="Open folder as input" data-help-title="Opening a folder" data-help="<p>You can open a whole folder into CyberChef, which will result in each file being loaded into a separate Input tab.</p><p>CyberChef can handle lots of Input files, but be aware that performance may suffer, especially if the files are large in size.</p><p>Folders can also be loaded by dragging them over the Input pane and dropping them.</p>">
+                            <button type="button" aria-label="Open folder as input" class="btn btn-primary bmd-btn-icon" id="btn-open-folder" data-toggle="tooltip" title="Open folder as input" data-help-title="Opening a folder" data-help="<p>You can open a whole folder into Utilitarian, which will result in each file being loaded into a separate Input tab.</p><p>Utilitarian can handle lots of Input files, but be aware that performance may suffer, especially if the files are large in size.</p><p>Folders can also be loaded by dragging them over the Input pane and dropping them.</p>">
                                 <i class="material-icons" aria-hidden="true">folder_open</i>
                                 <input type="file" id="open-folder" style="display: none" multiple directory webkitdirectory>
                             </button>
-                            <button type="button" aria-label="Open file as input" class="btn btn-primary bmd-btn-icon" id="btn-open-file" data-toggle="tooltip" title="Open file as input" data-help-title="Opening a file" data-help="<p>Files can be loaded into CyberChef individually or in groups, either using the 'Open file as input' button, or by dragging and dropping them over the Input pane.</p><p>CyberChef can handle reasonably large files (at least 500MB, depending on hardware), but performance may be impacted and some Operations will run very slowly over large Inputs.</p>">
+                            <button type="button" aria-label="Open file as input" class="btn btn-primary bmd-btn-icon" id="btn-open-file" data-toggle="tooltip" title="Open file as input" data-help-title="Opening a file" data-help="<p>Files can be loaded into Utilitarian individually or in groups, either using the 'Open file as input' button, or by dragging and dropping them over the Input pane.</p><p>Utilitarian can handle reasonably large files (at least 500MB, depending on hardware), but performance may be impacted and some Operations will run very slowly over large Inputs.</p>">
                                 <i class="material-icons" aria-hidden="true">input</i>
                                 <input type="file" id="open-file" style="display: none" multiple>
                             </button>
-                            <button type="button" aria-label="Clear input and output" class="btn btn-primary bmd-btn-icon" id="clr-io" data-toggle="tooltip" title="Clear input and output" data-help-title="Clearing the Input and Output" data-help="Clicking the 'Clear input and output' button will remove all Inputs and Outputs. It will not clear the Recipe.">
+                            <button type="button" aria-label="Clear input and output" class="btn btn-primary bmd-btn-icon" id="clr-io" data-toggle="tooltip" title="Clear input and output" data-help-title="Clearing the Input and Output" data-help="Clicking the 'Clear input and output' button will remove all Inputs and Outputs. It will not clear the Chain.">
                                 <i class="material-icons" aria-hidden="true">delete</i>
                             </button>
-                            <button type="button" aria-label="Reset pane layout" class="btn btn-primary bmd-btn-icon" id="reset-layout" data-toggle="tooltip" title="Reset pane layout" data-help-title="Resetting the pane layout" data-help="CyberChef's panes can be resized to suit your area of focus. This button will reset the pane sizes to their default configuration.">
+                            <button type="button" aria-label="Reset pane layout" class="btn btn-primary bmd-btn-icon" id="reset-layout" data-toggle="tooltip" title="Reset pane layout" data-help-title="Resetting the pane layout" data-help="Utilitarian's panes can be resized to suit your area of focus. This button will reset the pane sizes to their default configuration.">
                                 <i class="material-icons" aria-hidden="true">view_compact</i>
                             </button>
                         </span>
@@ -300,16 +300,16 @@
                                 </div>
                         </div>
                       </div>
-                      <div id="output" class="split card mt-3 output-card" data-help-title="Output pane" data-help="<p>This pane displays the results of the Recipe after it has processed your Input.</p><p>CyberChef does its best to represent data as accurately as possible to ensure you know exactly what you are working with. Non-printable characters are represented using control character pictures, for example a null byte (0x00) is displayed like this: <span title='Control character null' aria-label='Control character null' class='cm-specialChar'>␀</span>.</p><p>When copying these characters from the Output, the original byte value will be copied into your clipboard, rather than the control character picture itself.</p>">
+                      <div id="output" class="split card mt-3 output-card" data-help-title="Output pane" data-help="<p>This pane displays the results of the Chain after it has processed your Input.</p><p>Utilitarian does its best to represent data as accurately as possible to ensure you know exactly what you are working with. Non-printable characters are represented using control character pictures, for example a null byte (0x00) is displayed like this: <span title='Control character null' aria-label='Control character null' class='cm-specialChar'>␀</span>.</p><p>When copying these characters from the Output, the original byte value will be copied into your clipboard, rather than the control character picture itself.</p>">
                         <div class="card-header">
                           <h5 class="card-title">Output</h5>
                           <div class="">
                             <span class="pane-controls">
                                 <div class="io-info" id="bake-info"></div>
-                                <button type="button" class="btn btn-primary bmd-btn-icon" id="save-all-to-file" data-toggle="tooltip" title="Save all outputs to a zip file" style="display: none" data-help-title="Saving all outputs to a zip file" data-help="<p>When operating with multiple tabbed Inputs and Outputs, you can use this button to save off all the Outputs at once in a ZIP file.</p><p>Use the 'Calculate' button to bake all Inputs at once.</p><p>You will be given the choice to specify the file extension for the Outputs, or you can let CyberChef attempt to detect the filetype of each one. If an Output's type is not clear, CyberChef will use the '.dat' extension.</p>">
+                                <button type="button" class="btn btn-primary bmd-btn-icon" id="save-all-to-file" data-toggle="tooltip" title="Save all outputs to a zip file" style="display: none" data-help-title="Saving all outputs to a zip file" data-help="<p>When operating with multiple tabbed Inputs and Outputs, you can use this button to save off all the Outputs at once in a ZIP file.</p><p>Use the 'Calculate' button to bake all Inputs at once.</p><p>You will be given the choice to specify the file extension for the Outputs, or you can let Utilitarian attempt to detect the filetype of each one. If an Output's type is not clear, Utilitarian will use the '.dat' extension.</p>">
                                         <i class="material-icons">archive</i>
                                     </button>
-                                <button type="button" aria-label="save" class="btn btn-primary bmd-btn-icon" id="save-to-file" data-toggle="tooltip" title="Save output to file" data-help-title="Saving output to a file" data-help="The currently active Output can be saved to a file. You will be asked to specify a filename. CyberChef will attempt to guess the correct file extension based on the data. If a file type cannot be detected, the extension defaults to '.dat' but can be changed manually.">
+                                <button type="button" aria-label="save" class="btn btn-primary bmd-btn-icon" id="save-to-file" data-toggle="tooltip" title="Save output to file" data-help-title="Saving output to a file" data-help="The currently active Output can be saved to a file. You will be asked to specify a filename. Utilitarian will attempt to guess the correct file extension based on the data. If a file type cannot be detected, the extension defaults to '.dat' but can be changed manually.">
                                     <i class="material-icons" aria-hidden="true">save</i>
                                 </button>
                                 <button type="button" aria-label="copy content" class="btn btn-primary bmd-btn-icon" id="copy-output" data-toggle="tooltip" title="Copy raw output to the clipboard" data-help-title="Copying raw output to the clipboard" data-help="<p>Data can be copied from the Output in the normal way by selecting text and copying it. This button provides a quick way of copying the entire output to the clipboard without having to select it. It directly copies the raw data rather than selecting text in the Output editor. Each method will have the same result, but the button may be more efficient for large Outputs as it does not require any DOM interaction.</p>">
@@ -318,17 +318,17 @@
                                 <button type="button" aria-label="replace input with output" class="btn btn-primary bmd-btn-icon" id="switch" data-toggle="tooltip" title="Replace input with output" data-help-title="Replacing input with output" data-help="<p>This button moves the currently active Output data into the currently active Input tab, overwriting whatever data was already there.</p><p>The Input character encoding and EOL sequence will be changed to match the current Output values, so that the data is interpreted correctly.</p>">
                                     <i class="material-icons" aria-hidden="true">open_in_browser</i>
                                 </button>
-                                <button type="button" aria-label="maximise output pane" class="btn btn-primary bmd-btn-icon" id="maximise-output" data-toggle="tooltip" title="Maximise output pane" data-help-title="Maximising the Output pane" data-help="This button allows you to view the Output pane at maximum size, hiding the Operations, Recipe and Input panes. You can restore the pane to its normal size by clicking the same button again.">
+                                <button type="button" aria-label="maximise output pane" class="btn btn-primary bmd-btn-icon" id="maximise-output" data-toggle="tooltip" title="Maximise output pane" data-help-title="Maximising the Output pane" data-help="This button allows you to view the Output pane at maximum size, hiding the Operations, Chain and Input panes. You can restore the pane to its normal size by clicking the same button again.">
                                     <i class="material-icons" aria-hidden="true">fullscreen</i>
                                 </button>
                             </span>
 
-                            <button type="button" class="btn btn-primary bmd-btn-icon hidden" id="magic" data-toggle="tooltip" title="Magic!" data-html="true" data-help-title="CyberChef Magic!" data-help="<p>One of CyberChef's best features is its ability to automatically detect which Operations might make more sense of your data. The Magic button appears when CyberChef has a suggested Operation for you based on the data in the Output.</p><p>Clicking on the button will add the suggested Operation(s) to your Recipe.</p><p>This background Magic detection will inspect your Output up to three levels deep and attempt to unwrap it using a range of techniques. For more control, use the 'Magic' operation, which allows you to configure greater depth and filter based on various parameters.</p><p>Further information about CyberChef Magic can be found <a href='https://github.com/gchq/CyberChef/wiki/Automatic-detection-of-encoded-data-using-CyberChef-Magic'>here</a>.</p>">
+                            <button type="button" class="btn btn-primary bmd-btn-icon hidden" id="magic" data-toggle="tooltip" title="Magic!" data-html="true" data-help-title="Utilitarian Magic!" data-help="<p>One of Utilitarian's best features is its ability to automatically detect which Operations might make more sense of your data. The Magic button appears when Utilitarian has a suggested Operation for you based on the data in the Output.</p><p>Clicking on the button will add the suggested Operation(s) to your Chain.</p><p>This background Magic detection will inspect your Output up to three levels deep and attempt to unwrap it using a range of techniques. For more control, use the 'Magic' operation, which allows you to configure greater depth and filter based on various parameters.</p><p>Further information about Utilitarian Magic can be found <a href='https://github.com/gchq/Utilitarian/wiki/Automatic-detection-of-encoded-data-using-Utilitarian-Magic'>here</a>.</p>">
                                 <svg width="22" height="22" viewBox="0 0 24 24">
                                     <path d="M7.5,5.6L5,7L6.4,4.5L5,2L7.5,3.4L10,2L8.6,4.5L10,7L7.5,5.6M19.5,15.4L22,14L20.6,16.5L22,19L19.5,17.6L17,19L18.4,16.5L17,14L19.5,15.4M22,2L20.6,4.5L22,7L19.5,5.6L17,7L18.4,4.5L17,2L19.5,3.4L22,2M13.34,12.78L15.78,10.34L13.66,8.22L11.22,10.66L13.34,12.78M14.37,7.29L16.71,9.63C17.1,10 17.1,10.65 16.71,11.04L5.04,22.71C4.65,23.1 4,23.1 3.63,22.71L1.29,20.37C0.9,20 0.9,19.35 1.29,18.96L12.96,7.29C13.35,6.9 14,6.9 14.37,7.29Z" />
                                 </svg>
                             </button>
-                            <span id="stale-indicator" class="hidden" data-toggle="tooltip" title="The output is stale. The input or recipe has changed since this output was generated. Calculate again to get the new value." data-help-title="Staleness indicator" data-help="The staleness indicator is displayed when the Recipe or Input has changed but the Output has not yet been updated to reflect this. It is most commonly displayed when Auto-bake is turned off and indicates that you need to Calculate in order to see an accurate Output.">
+                            <span id="stale-indicator" class="hidden" data-toggle="tooltip" title="The output is stale. The input or recipe has changed since this output was generated. Calculate again to get the new value." data-help-title="Staleness indicator" data-help="The staleness indicator is displayed when the Chain or Input has changed but the Output has not yet been updated to reflect this. It is most commonly displayed when Auto-bake is turned off and indicates that you need to Calculate in order to see an accurate Output.">
                                 <i class="material-icons">access_time</i>
                             </span>
                         </div>
@@ -373,7 +373,7 @@
 
 
                 <!-- <div id="operations" class="split split-horizontal no-select">
-                    <div class="title no-select" data-help-title="Operations list" data-help="<p>The Operations list contains all the operations in CyberChef arranged into categories. Some operations may be present in multiple categories. You can search for operations using the search box.</p><p>To use an operation, either double click it, or drag it into the Recipe pane. You will then be able to configure its arguments (or 'Ingredients' in CyberChef terminology).</p>">
+                    <div class="title no-select" data-help-title="Operations list" data-help="<p>The Operations list contains all the operations in Utilitarian arranged into categories. Some operations may be present in multiple categories. You can search for operations using the search box.</p><p>To use an operation, either double click it, or drag it into the Chain pane. You will then be able to configure its arguments (or 'Ingredients' in Utilitarian terminology).</p>">
                         Operations
                         <span class="op-count"></span>
                     </div>
@@ -382,20 +382,20 @@
                     <div id="categories" class="panel-group no-select"></div>
                 </div> -->
 
-                <!-- <div id="recipe" class="split split-horizontal no-select" data-help-title="Recipe pane" data-help="<p>The Recipe pane is where your chosen Operations are configured. If you are a programmer, think of these as functions. If you are not a programmer, these are like steps in a cake recipe. The Input data will be processed based on the Operations in your Recipe.</p><ul><li>To reorder, simply drag and drop the Operations into the order your require</li><li>To remove an operation, either double click it, or drag it outside of the Recipe pane</li></ul><p>The arguments (or 'Ingredients' in CyberChef terminology) can be configured to change how an Operation processes the data.</p>">
+                <!-- <div id="recipe" class="split split-horizontal no-select" data-help-title="Chain pane" data-help="<p>The Chain pane is where your chosen Operations are configured. If you are a programmer, think of these as functions. If you are not a programmer, these are like steps in a cake recipe. The Input data will be processed based on the Operations in your Chain.</p><ul><li>To reorder, simply drag and drop the Operations into the order your require</li><li>To remove an operation, either double click it, or drag it outside of the Chain pane</li></ul><p>The arguments (or 'Ingredients' in Utilitarian terminology) can be configured to change how an Operation processes the data.</p>">
                     <div class="title no-select">
-                        Recipe
+                        Chain
                         <span class="pane-controls hide-on-maximised-output">
-                            <button type="button" aria-label="Hide arguments" class="btn btn-primary bmd-btn-icon" id="hide-icon" data-toggle="tooltip" title="Hide arguments" hide-args="false" data-help-title="Hiding every Operation's argument view in a Recipe" data-help="Clicking 'Hide arguments' will hide all the argument views for every Operation in the Recipe, to save space when you have too many Operation in your Recipe">
+                            <button type="button" aria-label="Hide arguments" class="btn btn-primary bmd-btn-icon" id="hide-icon" data-toggle="tooltip" title="Hide arguments" hide-args="false" data-help-title="Hiding every Operation's argument view in a Chain" data-help="Clicking 'Hide arguments' will hide all the argument views for every Operation in the Chain, to save space when you have too many Operation in your Chain">
                                 <i class="material-icons">keyboard_arrow_up</i>
                             </button>
-                            <button type="button" aria-label="Save recipe" class="btn btn-primary bmd-btn-icon" id="save" data-toggle="tooltip" title="Save recipe" data-help-title="Saving a recipe" data-help="<p>Recipes can be represented in a few different formats and saved for use at a later date. You can either copy the Recipe configuration and save it somewhere offline for later use, or use your browser's local storage.</p><ul><li><b>Deep link:</b> The easiest way to share a CyberChef Recipe is to copy the deep link, either from the address bar (which is updated as the Recipe or Input changes), or from the 'Save recipe' pane. When you visit this link, the Recipe and Input will be populated from where you left off.</li><li><b>Chef format:</b> This custom format is designed to be compact and easily readable. It is the format used in CyberChef's URL, so it largely uses characters that do not have to be escaped in URL encoding, making it a little easier to understand what a CyberChef URL contains.</li><li><b>Clean JSON:</b> This JSON format uses whitespace and indentation in a way that makes the Recipe easy to read.</li><li><b>Compact JSON:</b> This is the most compact way that the Recipe can be represented in JSON.</li><li><b>Local storage:</b> Alternatively, you can enter a name into the 'Recipe name' field and save to your browser's local storage. The Recipe will then be available to load from the 'Load Recipe' pane as long as you are using the same browser profile. Be aware that if your browser profile is cleaned, you may lose this data.</li></ul>">
+                            <button type="button" aria-label="Save recipe" class="btn btn-primary bmd-btn-icon" id="save" data-toggle="tooltip" title="Save recipe" data-help-title="Saving a recipe" data-help="<p>Recipes can be represented in a few different formats and saved for use at a later date. You can either copy the Chain configuration and save it somewhere offline for later use, or use your browser's local storage.</p><ul><li><b>Deep link:</b> The easiest way to share a Utilitarian Chain is to copy the deep link, either from the address bar (which is updated as the Chain or Input changes), or from the 'Save recipe' pane. When you visit this link, the Chain and Input will be populated from where you left off.</li><li><b>Chef format:</b> This custom format is designed to be compact and easily readable. It is the format used in Utilitarian's URL, so it largely uses characters that do not have to be escaped in URL encoding, making it a little easier to understand what a Utilitarian URL contains.</li><li><b>Clean JSON:</b> This JSON format uses whitespace and indentation in a way that makes the Chain easy to read.</li><li><b>Compact JSON:</b> This is the most compact way that the Chain can be represented in JSON.</li><li><b>Local storage:</b> Alternatively, you can enter a name into the 'Chain name' field and save to your browser's local storage. The Chain will then be available to load from the 'Load Chain' pane as long as you are using the same browser profile. Be aware that if your browser profile is cleaned, you may lose this data.</li></ul>">
                                 <i class="material-icons" aria-hidden="true">save</i>
                             </button>
-                            <button type="button" aria-label="Load recipe" class="btn btn-primary bmd-btn-icon" id="load" data-toggle="tooltip" title="Load recipe" data-help-title="Loading a recipe" data-help="<p>Saved recipes can be loaded using one of the following methods:</p><ul><li>If you have a CyberChef deep link, simply visit that link and the Recipe and Input will be populated automatically.</li><li>If you have a Recipe string in any of the accepted formats, paste it into the 'Load recipe' pane textbox and click 'Load'.</li><li>If you have saved a Recipe to your browser's local storage, it should be available in the dropdown menu in the 'Load recipe' pane. If it is not there, you may not be using the same browser profile, or your profile may have been cleared.</li></ul>">
+                            <button type="button" aria-label="Load recipe" class="btn btn-primary bmd-btn-icon" id="load" data-toggle="tooltip" title="Load recipe" data-help-title="Loading a recipe" data-help="<p>Saved recipes can be loaded using one of the following methods:</p><ul><li>If you have a Utilitarian deep link, simply visit that link and the Chain and Input will be populated automatically.</li><li>If you have a Chain string in any of the accepted formats, paste it into the 'Load recipe' pane textbox and click 'Load'.</li><li>If you have saved a Chain to your browser's local storage, it should be available in the dropdown menu in the 'Load recipe' pane. If it is not there, you may not be using the same browser profile, or your profile may have been cleared.</li></ul>">
                                 <i class="material-icons" aria-hidden="true">folder</i>
                             </button>
-                            <button type="button" aria-label="Clear recipe" class="btn btn-primary bmd-btn-icon" id="clr-recipe" data-toggle="tooltip" title="Clear recipe" data-help-title="Clearing a recipe" data-help="Clicking the 'Clear recipe' button will remove all operations from the Recipe. It will not clear the Input, but it will trigger a Calculate if Auto-bake is turned on, which will change the value of the Output.">
+                            <button type="button" aria-label="Clear recipe" class="btn btn-primary bmd-btn-icon" id="clr-recipe" data-toggle="tooltip" title="Clear recipe" data-help-title="Clearing a recipe" data-help="Clicking the 'Clear recipe' button will remove all operations from the Chain. It will not clear the Input, but it will trigger a Calculate if Auto-bake is turned on, which will change the value of the Output.">
                                 <i class="material-icons" aria-hidden="true">delete</i>
                             </button>
                         </span>
@@ -404,17 +404,17 @@
 
                     <div id="controls" class="no-select hide-on-maximised-output">
                         <div id="controls-content">
-                            <button type="button" class="mx-2 btn btn-lg btn-secondary" id="step" data-toggle="tooltip" title="Step through the recipe" data-help-title="Stepping through the Recipe" data-help="<p>The Step button allows you to execute one operation at a time, rather than running the whole Recipe from beginning to end.</p><p>Step allows you to inspect the data at each stage of the Recipe and understand what is being passed to the next operation.</p>">
+                            <button type="button" class="mx-2 btn btn-lg btn-secondary" id="step" data-toggle="tooltip" title="Step through the recipe" data-help-title="Stepping through the Chain" data-help="<p>The Step button allows you to execute one operation at a time, rather than running the whole Chain from beginning to end.</p><p>Step allows you to inspect the data at each stage of the Chain and understand what is being passed to the next operation.</p>">
                                 Step
                             </button>
 
-                            <button type="button" class="mx-2 btn btn-lg btn-success btn-raised btn-block" id="bake" data-help-title="Baking" data-help="<p>Baking causes CyberChef to run the Recipe against your data. This involves three steps:</p><ol><li>The data in the Input is encoded into bytes using the character encoding selected in the Input status bar.</li><li>The data is run through each of the operations in the Recipe in turn with the output of one operation being fed into the next operation as its input.</li><li>The outcome of the final operation in the Recipe is decoded into Output text using the character encoding selected in the Output status bar.</li></ol><p>If there are multiple Inputs, the Calculate button causes every Input to be baked simultaneously.</p>">
+                            <button type="button" class="mx-2 btn btn-lg btn-success btn-raised btn-block" id="bake" data-help-title="Baking" data-help="<p>Baking causes Utilitarian to run the Chain against your data. This involves three steps:</p><ol><li>The data in the Input is encoded into bytes using the character encoding selected in the Input status bar.</li><li>The data is run through each of the operations in the Chain in turn with the output of one operation being fed into the next operation as its input.</li><li>The outcome of the final operation in the Chain is decoded into Output text using the character encoding selected in the Output status bar.</li></ol><p>If there are multiple Inputs, the Calculate button causes every Input to be baked simultaneously.</p>">
                                 <img aria-hidden="true" src="<%- require('../static/images/cook_male-32x32.png') %>" alt="Chef Icon"/>
                                 <span>Calculate!</span>
                             </button>
 
                             <div class="form-group" style="display: contents;">
-                                <div class="mx-1 checkbox" data-help-title="Auto-bake" data-help="<p>When Auto-bake is turned on, CyberChef will bake the Input using the Recipe whenever anything in the Input or Recipe changes.</p>This includes:<ul><li>Adding or removing operations</li><li>Modifying operation arguments</li><li>Editing the Input</li><li>Changing the Input character encoding</li></ul><p>If there are multiple inputs, only the currently active tab will be baked when Auto-bake triggers. You can bake all inputs manually using the Calculate button.</p>">
+                                <div class="mx-1 checkbox" data-help-title="Auto-bake" data-help="<p>When Auto-bake is turned on, Utilitarian will bake the Input using the Chain whenever anything in the Input or Chain changes.</p>This includes:<ul><li>Adding or removing operations</li><li>Modifying operation arguments</li><li>Editing the Input</li><li>Changing the Input character encoding</li></ul><p>If there are multiple inputs, only the currently active tab will be baked when Auto-bake triggers. You can bake all inputs manually using the Calculate button.</p>">
                                     <label id="auto-bake-label">
                                         <input type="checkbox" checked="checked" id="auto-bake">
                                         <br>Auto Calculate
@@ -426,7 +426,7 @@
                 </div> -->
 
                 <!-- <div class="split split-horizontal" id="IO">
-                    <div id="input" class="split no-select" data-help-title="Input pane" data-help="<p>Input data can be entered by typing it in, pasting it in, dragging it in, or using the 'Load file' or 'Load folder' buttons.</p><p>CyberChef does its best to represent data as accurately as possible to ensure you know exactly what you are working with. Non-printable characters are represented using control character pictures, for example a null byte (0x00) is displayed like this: <span title='Control character null' aria-label='Control character null' class='cm-specialChar'>␀</span>.</p>">
+                    <div id="input" class="split no-select" data-help-title="Input pane" data-help="<p>Input data can be entered by typing it in, pasting it in, dragging it in, or using the 'Load file' or 'Load folder' buttons.</p><p>Utilitarian does its best to represent data as accurately as possible to ensure you know exactly what you are working with. Non-printable characters are represented using control character pictures, for example a null byte (0x00) is displayed like this: <span title='Control character null' aria-label='Control character null' class='cm-specialChar'>␀</span>.</p>">
                         <div class="title no-select">
                             <label for="input-text">Input</label>
                             <span class="pane-controls">
@@ -434,18 +434,18 @@
                                 <button type="button" aria-label="Add new input tab" class="btn btn-primary bmd-btn-icon" id="btn-new-tab" data-toggle="tooltip" title="Add a new input tab" data-help-title="Tabs" data-help="<p>New tabs can be created to support multiple Inputs. These tabs have their own associated character encodings and EOL separators, as defined in their status bars.</p><p>The deep link in the URL bar only contains information about the currently active tab.</p>">
                                     <i class="material-icons" aria-hidden="true">add</i>
                                 </button>
-                                <button type="button" aria-label="Open folder as input" class="btn btn-primary bmd-btn-icon" id="btn-open-folder" data-toggle="tooltip" title="Open folder as input" data-help-title="Opening a folder" data-help="<p>You can open a whole folder into CyberChef, which will result in each file being loaded into a separate Input tab.</p><p>CyberChef can handle lots of Input files, but be aware that performance may suffer, especially if the files are large in size.</p><p>Folders can also be loaded by dragging them over the Input pane and dropping them.</p>">
+                                <button type="button" aria-label="Open folder as input" class="btn btn-primary bmd-btn-icon" id="btn-open-folder" data-toggle="tooltip" title="Open folder as input" data-help-title="Opening a folder" data-help="<p>You can open a whole folder into Utilitarian, which will result in each file being loaded into a separate Input tab.</p><p>Utilitarian can handle lots of Input files, but be aware that performance may suffer, especially if the files are large in size.</p><p>Folders can also be loaded by dragging them over the Input pane and dropping them.</p>">
                                     <i class="material-icons" aria-hidden="true">folder_open</i>
                                     <input type="file" id="open-folder" style="display: none" multiple directory webkitdirectory>
                                 </button>
-                                <button type="button" aria-label="Open file as input" class="btn btn-primary bmd-btn-icon" id="btn-open-file" data-toggle="tooltip" title="Open file as input" data-help-title="Opening a file" data-help="<p>Files can be loaded into CyberChef individually or in groups, either using the 'Open file as input' button, or by dragging and dropping them over the Input pane.</p><p>CyberChef can handle reasonably large files (at least 500MB, depending on hardware), but performance may be impacted and some Operations will run very slowly over large Inputs.</p>">
+                                <button type="button" aria-label="Open file as input" class="btn btn-primary bmd-btn-icon" id="btn-open-file" data-toggle="tooltip" title="Open file as input" data-help-title="Opening a file" data-help="<p>Files can be loaded into Utilitarian individually or in groups, either using the 'Open file as input' button, or by dragging and dropping them over the Input pane.</p><p>Utilitarian can handle reasonably large files (at least 500MB, depending on hardware), but performance may be impacted and some Operations will run very slowly over large Inputs.</p>">
                                     <i class="material-icons" aria-hidden="true">input</i>
                                     <input type="file" id="open-file" style="display: none" multiple>
                                 </button>
-                                <button type="button" aria-label="Clear input and output" class="btn btn-primary bmd-btn-icon" id="clr-io" data-toggle="tooltip" title="Clear input and output" data-help-title="Clearing the Input and Output" data-help="Clicking the 'Clear input and output' button will remove all Inputs and Outputs. It will not clear the Recipe.">
+                                <button type="button" aria-label="Clear input and output" class="btn btn-primary bmd-btn-icon" id="clr-io" data-toggle="tooltip" title="Clear input and output" data-help-title="Clearing the Input and Output" data-help="Clicking the 'Clear input and output' button will remove all Inputs and Outputs. It will not clear the Chain.">
                                     <i class="material-icons" aria-hidden="true">delete</i>
                                 </button>
-                                <button type="button" aria-label="Reset pane layout" class="btn btn-primary bmd-btn-icon" id="reset-layout" data-toggle="tooltip" title="Reset pane layout" data-help-title="Resetting the pane layout" data-help="CyberChef's panes can be resized to suit your area of focus. This button will reset the pane sizes to their default configuration.">
+                                <button type="button" aria-label="Reset pane layout" class="btn btn-primary bmd-btn-icon" id="reset-layout" data-toggle="tooltip" title="Reset pane layout" data-help-title="Resetting the pane layout" data-help="Utilitarian's panes can be resized to suit your area of focus. This button will reset the pane sizes to their default configuration.">
                                     <i class="material-icons" aria-hidden="true">view_compact</i>
                                 </button>
                             </span>
@@ -480,15 +480,15 @@
                         </div>
                     </div>
 
-                    <div id="output" class="split" data-help-title="Output pane" data-help="<p>This pane displays the results of the Recipe after it has processed your Input.</p><p>CyberChef does its best to represent data as accurately as possible to ensure you know exactly what you are working with. Non-printable characters are represented using control character pictures, for example a null byte (0x00) is displayed like this: <span title='Control character null' aria-label='Control character null' class='cm-specialChar'>␀</span>.</p><p>When copying these characters from the Output, the original byte value will be copied into your clipboard, rather than the control character picture itself.</p>">
+                    <div id="output" class="split" data-help-title="Output pane" data-help="<p>This pane displays the results of the Chain after it has processed your Input.</p><p>Utilitarian does its best to represent data as accurately as possible to ensure you know exactly what you are working with. Non-printable characters are represented using control character pictures, for example a null byte (0x00) is displayed like this: <span title='Control character null' aria-label='Control character null' class='cm-specialChar'>␀</span>.</p><p>When copying these characters from the Output, the original byte value will be copied into your clipboard, rather than the control character picture itself.</p>">
                         <div class="title no-select">
                             <label for="output-text">Output</label>
                             <span class="pane-controls">
                                 <div class="io-info" id="bake-info"></div>
-                                <button type="button" class="btn btn-primary bmd-btn-icon" id="save-all-to-file" data-toggle="tooltip" title="Save all outputs to a zip file" style="display: none" data-help-title="Saving all outputs to a zip file" data-help="<p>When operating with multiple tabbed Inputs and Outputs, you can use this button to save off all the Outputs at once in a ZIP file.</p><p>Use the 'Calculate' button to bake all Inputs at once.</p><p>You will be given the choice to specify the file extension for the Outputs, or you can let CyberChef attempt to detect the filetype of each one. If an Output's type is not clear, CyberChef will use the '.dat' extension.</p>">
+                                <button type="button" class="btn btn-primary bmd-btn-icon" id="save-all-to-file" data-toggle="tooltip" title="Save all outputs to a zip file" style="display: none" data-help-title="Saving all outputs to a zip file" data-help="<p>When operating with multiple tabbed Inputs and Outputs, you can use this button to save off all the Outputs at once in a ZIP file.</p><p>Use the 'Calculate' button to bake all Inputs at once.</p><p>You will be given the choice to specify the file extension for the Outputs, or you can let Utilitarian attempt to detect the filetype of each one. If an Output's type is not clear, Utilitarian will use the '.dat' extension.</p>">
                                         <i class="material-icons">archive</i>
                                     </button>
-                                <button type="button" aria-label="save" class="btn btn-primary bmd-btn-icon" id="save-to-file" data-toggle="tooltip" title="Save output to file" data-help-title="Saving output to a file" data-help="The currently active Output can be saved to a file. You will be asked to specify a filename. CyberChef will attempt to guess the correct file extension based on the data. If a file type cannot be detected, the extension defaults to '.dat' but can be changed manually.">
+                                <button type="button" aria-label="save" class="btn btn-primary bmd-btn-icon" id="save-to-file" data-toggle="tooltip" title="Save output to file" data-help-title="Saving output to a file" data-help="The currently active Output can be saved to a file. You will be asked to specify a filename. Utilitarian will attempt to guess the correct file extension based on the data. If a file type cannot be detected, the extension defaults to '.dat' but can be changed manually.">
                                     <i class="material-icons" aria-hidden="true">save</i>
                                 </button>
                                 <button type="button" aria-label="copy content" class="btn btn-primary bmd-btn-icon" id="copy-output" data-toggle="tooltip" title="Copy raw output to the clipboard" data-help-title="Copying raw output to the clipboard" data-help="<p>Data can be copied from the Output in the normal way by selecting text and copying it. This button provides a quick way of copying the entire output to the clipboard without having to select it. It directly copies the raw data rather than selecting text in the Output editor. Each method will have the same result, but the button may be more efficient for large Outputs as it does not require any DOM interaction.</p>">
@@ -497,17 +497,17 @@
                                 <button type="button" aria-label="replace input with output" class="btn btn-primary bmd-btn-icon" id="switch" data-toggle="tooltip" title="Replace input with output" data-help-title="Replacing input with output" data-help="<p>This button moves the currently active Output data into the currently active Input tab, overwriting whatever data was already there.</p><p>The Input character encoding and EOL sequence will be changed to match the current Output values, so that the data is interpreted correctly.</p>">
                                     <i class="material-icons" aria-hidden="true">open_in_browser</i>
                                 </button>
-                                <button type="button" aria-label="maximise output pane" class="btn btn-primary bmd-btn-icon" id="maximise-output" data-toggle="tooltip" title="Maximise output pane" data-help-title="Maximising the Output pane" data-help="This button allows you to view the Output pane at maximum size, hiding the Operations, Recipe and Input panes. You can restore the pane to its normal size by clicking the same button again.">
+                                <button type="button" aria-label="maximise output pane" class="btn btn-primary bmd-btn-icon" id="maximise-output" data-toggle="tooltip" title="Maximise output pane" data-help-title="Maximising the Output pane" data-help="This button allows you to view the Output pane at maximum size, hiding the Operations, Chain and Input panes. You can restore the pane to its normal size by clicking the same button again.">
                                     <i class="material-icons" aria-hidden="true">fullscreen</i>
                                 </button>
                             </span>
 
-                            <button type="button" class="btn btn-primary bmd-btn-icon hidden" id="magic" data-toggle="tooltip" title="Magic!" data-html="true" data-help-title="CyberChef Magic!" data-help="<p>One of CyberChef's best features is its ability to automatically detect which Operations might make more sense of your data. The Magic button appears when CyberChef has a suggested Operation for you based on the data in the Output.</p><p>Clicking on the button will add the suggested Operation(s) to your Recipe.</p><p>This background Magic detection will inspect your Output up to three levels deep and attempt to unwrap it using a range of techniques. For more control, use the 'Magic' operation, which allows you to configure greater depth and filter based on various parameters.</p><p>Further information about CyberChef Magic can be found <a href='https://github.com/gchq/CyberChef/wiki/Automatic-detection-of-encoded-data-using-CyberChef-Magic'>here</a>.</p>">
+                            <button type="button" class="btn btn-primary bmd-btn-icon hidden" id="magic" data-toggle="tooltip" title="Magic!" data-html="true" data-help-title="Utilitarian Magic!" data-help="<p>One of Utilitarian's best features is its ability to automatically detect which Operations might make more sense of your data. The Magic button appears when Utilitarian has a suggested Operation for you based on the data in the Output.</p><p>Clicking on the button will add the suggested Operation(s) to your Chain.</p><p>This background Magic detection will inspect your Output up to three levels deep and attempt to unwrap it using a range of techniques. For more control, use the 'Magic' operation, which allows you to configure greater depth and filter based on various parameters.</p><p>Further information about Utilitarian Magic can be found <a href='https://github.com/gchq/Utilitarian/wiki/Automatic-detection-of-encoded-data-using-Utilitarian-Magic'>here</a>.</p>">
                                 <svg width="22" height="22" viewBox="0 0 24 24">
                                     <path d="M7.5,5.6L5,7L6.4,4.5L5,2L7.5,3.4L10,2L8.6,4.5L10,7L7.5,5.6M19.5,15.4L22,14L20.6,16.5L22,19L19.5,17.6L17,19L18.4,16.5L17,14L19.5,15.4M22,2L20.6,4.5L22,7L19.5,5.6L17,7L18.4,4.5L17,2L19.5,3.4L22,2M13.34,12.78L15.78,10.34L13.66,8.22L11.22,10.66L13.34,12.78M14.37,7.29L16.71,9.63C17.1,10 17.1,10.65 16.71,11.04L5.04,22.71C4.65,23.1 4,23.1 3.63,22.71L1.29,20.37C0.9,20 0.9,19.35 1.29,18.96L12.96,7.29C13.35,6.9 14,6.9 14.37,7.29Z" />
                                 </svg>
                             </button>
-                            <span id="stale-indicator" class="hidden" data-toggle="tooltip" title="The output is stale. The input or recipe has changed since this output was generated. Calculate again to get the new value." data-help-title="Staleness indicator" data-help="The staleness indicator is displayed when the Recipe or Input has changed but the Output has not yet been updated to reflect this. It is most commonly displayed when Auto-bake is turned off and indicates that you need to Calculate in order to see an accurate Output.">
+                            <span id="stale-indicator" class="hidden" data-toggle="tooltip" title="The output is stale. The input or recipe has changed since this output was generated. Calculate again to get the new value." data-help-title="Staleness indicator" data-help="The staleness indicator is displayed when the Chain or Input has changed but the Output has not yet been updated to reflect this. It is most commonly displayed when Auto-bake is turned off and indicates that you need to Calculate in order to see an accurate Output.">
                                 <i class="material-icons">access_time</i>
                             </span>
                         </div>
@@ -579,7 +579,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="save-name" class="bmd-label-floating">Recipe name</label>
+                            <label for="save-name" class="bmd-label-floating">Chain name</label>
                             <input type="text" class="form-control" id="save-name">
                             <span class="bmd-help">Save your recipe to local storage using this name, or copy it to load later</span>
                         </div>
@@ -615,12 +615,12 @@
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
-                            <label for="load-name" class="bmd-label-floating">Recipe name</label>
+                            <label for="load-name" class="bmd-label-floating">Chain name</label>
                             <select class="form-control" id="load-name"></select>
                             <span class="bmd-help">Load your recipe from local storage by selecting its name from the drop-down</span>
                         </div>
                         <div class="form-group">
-                            <label for="load-text" class="bmd-label-floating">Recipe</label>
+                            <label for="load-text" class="bmd-label-floating">Chain</label>
                             <textarea class="form-control" id="load-text" rows="5"></textarea>
                             <span class="bmd-help">Load your recipe by pasting it into this box</span>
                         </div>
@@ -772,17 +772,17 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content" data-help-proxy="#support">
                     <div class="modal-header">
-                        <h5 class="modal-title">CyberChef - The Cyber Swiss Army Knife</h5>
+                        <h5 class="modal-title">Utilitarian - The Cyber Swiss Army Knife</h5>
                     </div>
                     <div class="modal-body">
-                        <img aria-hidden="true" class="about-img-left" src="<%- require('../static/images/cyberchef-128x128.png') %>" alt="CyberChef Logo"/>
+                        <img aria-hidden="true" class="about-img-left" src="<%- require('../static/images/cyberchef-128x128.png') %>" alt="Utilitarian Logo"/>
                         <p class="subtext">
                             Version <%= htmlWebpackPlugin.options.version %><br>
                             Compile time: <%= htmlWebpackPlugin.options.compileTime %>
                         </p>
                         <p>&copy; Crown Copyright 2016-<%= htmlWebpackPlugin.options.compileYear %>.</p>
                         <p>Released under the Apache Licence, Version 2.0.</p>
-                        <p><a href="https://gitter.im/gchq/CyberChef">
+                        <p><a href="https://gitter.im/gchq/Utilitarian">
                             <img src="<%- require('../static/images/gitter-badge.svg') %>">
                         </a></p>
 
@@ -809,21 +809,21 @@
                             </li>
                         </ul>
                         <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane active" id="faqs" data-help-title="FAQ pane" data-help="The Frequently Asked Questions pane provides answers to some of the most common queries people have about CyberChef.">
+                            <div role="tabpanel" class="tab-pane active" id="faqs" data-help-title="FAQ pane" data-help="The Frequently Asked Questions pane provides answers to some of the most common queries people have about Utilitarian.">
                                 <br>
                                 <a class="btn btn-primary" data-toggle="collapse" data-target="#faq-contextual-help">
                                     How does X feature work?
                                 </a>
                                 <div class="collapse" id="faq-contextual-help">
-                                    <p>CyberChef has a contextual help feature. Just hover your cursor over a feature that you want to learn more about and press <code>F1</code> on your keyboard to get some information about it. Give it a try by hovering over this text and pressing <code>F1</code> now!</code></p>
+                                    <p>Utilitarian has a contextual help feature. Just hover your cursor over a feature that you want to learn more about and press <code>F1</code> on your keyboard to get some information about it. Give it a try by hovering over this text and pressing <code>F1</code> now!</code></p>
                                 </div>
                                 <br>
 
                                 <a class="btn btn-primary" data-toggle="collapse" data-target="#faq-examples">
-                                    What sort of things can I do with CyberChef?
+                                    What sort of things can I do with Utilitarian?
                                 </a>
                                 <div class="collapse" id="faq-examples">
-                                    <p>There are <span class="num-ops">hundreds of</span> operations in CyberChef allowing you to carry out simple and complex tasks easily. Here are some examples:</p>
+                                    <p>There are <span class="num-ops">hundreds of</span> operations in Utilitarian allowing you to carry out simple and complex tasks easily. Here are some examples:</p>
                                     <ul>
                                         <li><a href="#recipe=From_Base64('A-Za-z0-9%2B/%3D',true)&input=VTI4Z2JHOXVaeUJoYm1RZ2RHaGhibXR6SUdadmNpQmhiR3dnZEdobElHWnBjMmd1">Decode a Base64-encoded string</a></li>
                                         <li><a href="#recipe=Translate_DateTime_Format('Standard%20date%20and%20time','DD/MM/YYYY%20HH:mm:ss','UTC','dddd%20Do%20MMMM%20YYYY%20HH:mm:ss%20Z%20z','Australia/Queensland')&input=MTUvMDYvMjAxNSAyMDo0NTowMA">Convert a date and time to a different time zone</a></li>
@@ -842,7 +842,7 @@
                                 </a>
                                 <div class="collapse" id="faq-load-files">
                                     <p>Yes! Just drag your file over the input box and drop it.</p>
-                                    <p>CyberChef can handle files up to around 2GB (depending on your browser), however some of the operations may take a very long time to run over this much data.</p>
+                                    <p>Utilitarian can handle files up to around 2GB (depending on your browser), however some of the operations may take a very long time to run over this much data.</p>
                                     <p>If the output is larger than a certain threshold (default <a href="#recipe=Multiply('Line%20feed')Convert_data_units('Bytes%20(B)','Mebibytes%20(MiB)')&input=MTAyNAoxMDI0">1MiB</a>), it will be presented to you as a file available for download. Slices of the file can be viewed in the output if you need to inspect them.</p>
                                 </div>
                                 <br>
@@ -861,40 +861,40 @@
                                     How does the 'Magic' operation work?
                                 </a>
                                 <div class="collapse" id="faq-magic">
-                                    <p>The 'Magic' operation uses a number of methods to detect encoded data and the operations which can be used to make sense of it. A technical description of these methods can be found <a href="https://github.com/gchq/CyberChef/wiki/Automatic-detection-of-encoded-data-using-CyberChef-Magic">here</a>.</p>
+                                    <p>The 'Magic' operation uses a number of methods to detect encoded data and the operations which can be used to make sense of it. A technical description of these methods can be found <a href="https://github.com/gchq/Utilitarian/wiki/Automatic-detection-of-encoded-data-using-Utilitarian-Magic">here</a>.</p>
                                 </div>
                             </div>
                             <div role="tabpanel" class="tab-pane" id="report-bug">
                                 <br>
-                                <p>If you find a bug in CyberChef, please raise an issue in our GitHub repository explaining it in as much detail as possible. Copy and include the following information if relevant.</p>
+                                <p>If you find a bug in Utilitarian, please raise an issue in our GitHub repository explaining it in as much detail as possible. Copy and include the following information if relevant.</p>
                                 <br>
                                 <pre id="report-bug-info"></pre>
                                 <br>
-                                <a class="btn btn-primary" href="https://github.com/gchq/CyberChef/issues/new/choose" role="button">Raise issue on GitHub</a>
+                                <a class="btn btn-primary" href="https://github.com/gchq/Utilitarian/issues/new/choose" role="button">Raise issue on GitHub</a>
                             </div>
                             <div role="tabpanel" class="tab-pane" id="about" style="padding: 20px;">
                                 <h5><strong>What</strong></h5>
-                                <p>A simple, intuitive web app for analysing and decoding data without having to deal with complex tools or programming languages. CyberChef encourages both technical and non-technical people to explore data formats, encryption and compression.</p><br>
+                                <p>A simple, intuitive web app for analysing and decoding data without having to deal with complex tools or programming languages. Utilitarian encourages both technical and non-technical people to explore data formats, encryption and compression.</p><br>
 
                                 <h5><strong>Why</strong></h5>
-                                <p>Digital data comes in all shapes, sizes and formats in the modern world – CyberChef helps to make sense of this data all on one easy-to-use platform.</p><br>
+                                <p>Digital data comes in all shapes, sizes and formats in the modern world – Utilitarian helps to make sense of this data all on one easy-to-use platform.</p><br>
 
 
                                 <h5><strong>How</strong></h5>
                                 <p>The interface is designed with simplicity at its heart. Complex techniques are now as trivial as drag-and-drop. Simple functions can be combined to build up a "recipe", potentially resulting in complex analysis, which can be shared with other users and used with their input.</p>
-                                <p>For those comfortable writing code, CyberChef is a quick and efficient way to prototype solutions to a problem which can then be scripted once proven to work.</p><br>
+                                <p>For those comfortable writing code, Utilitarian is a quick and efficient way to prototype solutions to a problem which can then be scripted once proven to work.</p><br>
 
 
                                 <h5><strong>Who</strong></h5>
-                                <p>It is expected that CyberChef will be useful for cybersecurity and antivirus companies. It should also appeal to the academic world and any individuals or companies involved in the analysis of digital data, be that software developers, analysts, mathematicians or casual puzzle solvers.</p><br>
+                                <p>It is expected that Utilitarian will be useful for cybersecurity and antivirus companies. It should also appeal to the academic world and any individuals or companies involved in the analysis of digital data, be that software developers, analysts, mathematicians or casual puzzle solvers.</p><br>
 
 
                                 <h5><strong>Aim</strong></h5>
-                                <p>It is hoped that by releasing CyberChef through <a href="https://github.com/gchq/CyberChef">GitHub</a>, contributions can be added which can be rolled out into future versions of the tool.</p><br>
+                                <p>It is hoped that by releasing Utilitarian through <a href="https://github.com/gchq/Utilitarian">GitHub</a>, contributions can be added which can be rolled out into future versions of the tool.</p><br>
 
 
                                 <br>
-                                <p>There are <span class="num-ops">hundreds of</span> useful operations in CyberChef for anyone working on anything vaguely Internet-related, whether you just want to convert a timestamp to a different format, decompress gzipped data, create a SHA3 hash, or parse an X.509 certificate to find out who issued it.</p>
+                                <p>There are <span class="num-ops">hundreds of</span> useful operations in Utilitarian for anyone working on anything vaguely Internet-related, whether you just want to convert a timestamp to a different format, decompress gzipped data, create a SHA3 hash, or parse an X.509 certificate to find out who issued it.</p>
                                 <p>It’s the Cyber Swiss Army Knife.</p>
                             </div>
                             <div role="tabpanel" class="tab-pane" id="keybindings" style="padding: 20px;">
@@ -905,7 +905,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
-                    <a href="https://github.com/gchq/CyberChef">
+                    <a href="https://github.com/gchq/Utilitarian">
                         <img aria-hidden="true" style="position: absolute; top: 0; right: 0; border: 0;" src="<%- require('../static/images/fork_me.png') %>" alt="Fork me on GitHub">
                     </a>
                 </div>
@@ -1056,26 +1056,26 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content" data-help-proxy="a[data-target='#download-modal']">
                     <div class="modal-header">
-                        <h5 class="modal-title">Download CyberChef</h5>
+                        <h5 class="modal-title">Download Utilitarian</h5>
                     </div>
                     <div class="modal-body">
                         <p>
-                            CyberChef runs entirely within your browser with no server-side component, meaning that your Input data and Recipe configuration are not sent anywhere, whether you use the live, official version of CyberChef or a downloaded, standalone version (assuming it is unmodified).
+                            Utilitarian runs entirely within your browser with no server-side component, meaning that your Input data and Chain configuration are not sent anywhere, whether you use the live, official version of Utilitarian or a downloaded, standalone version (assuming it is unmodified).
                         </p>
                         <p>
                             There are three operations that make calls to external services, those being the 'Show on map' operation which downloads map tiles from wikimedia.org, the 'DNS over HTTPS' operation which resolves DNS requests using either Google or Cloudflare services, and the 'HTTP request' operation that calls out to the configured URL you enter. You can confirm what network requests are made using your browser's developer console (F12) and viewing the Network tab.
                         </p>
                         <p>
-                            If you would like to download your own standalone copy of CyberChef to run in a segregated network or where there is limited or no Internet connectivity, you can get a ZIP file containing the whole web app below. This can be run locally or hosted on a web server with no configuration required.
+                            If you would like to download your own standalone copy of Utilitarian to run in a segregated network or where there is limited or no Internet connectivity, you can get a ZIP file containing the whole web app below. This can be run locally or hosted on a web server with no configuration required.
                         </p>
                         <p>
                             Be aware that the standalone version will never update itself, meaning it will not receive bug fixes or new features until you re-download newer versions manually.
                         </p>
 
-                        <h6>CyberChef v<%= htmlWebpackPlugin.options.version %></h6>
+                        <h6>Utilitarian v<%= htmlWebpackPlugin.options.version %></h6>
                         <ul>
                             <li>Build time: <%= htmlWebpackPlugin.options.compileTime %></li>
-                            <li>The changelog for this version can be viewed <a href="https://github.com/gchq/CyberChef/blob/v<%= htmlWebpackPlugin.options.version %>/CHANGELOG.md">here</a></li>
+                            <li>The changelog for this version can be viewed <a href="https://github.com/gchq/Utilitarian/blob/v<%= htmlWebpackPlugin.options.version %>/CHANGELOG.md">here</a></li>
                             <li>&copy; Crown Copyright 2016-<%= htmlWebpackPlugin.options.compileYear %></li>
                             <li>Released under the Apache Licence, Version 2.0</li>
                             <li>SHA256 hash: DOWNLOAD_HASH_PLACEHOLDER</li>

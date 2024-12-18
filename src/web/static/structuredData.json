@@ -2,21 +2,21 @@
     {
         "@context": "http://schema.org",
         "@type": "Organization",
-        "url": "https://gchq.github.io/CyberChef/",
-        "logo": "https://gchq.github.io/CyberChef/images/cyberchef-128x128.png",
+        "url": "https://gchq.github.io/Utilitarian/",
+        "logo": "https://gchq.github.io/Utilitarian/images/cyberchef-128x128.png",
         "sameAs": [
-            "https://github.com/gchq/CyberChef",
+            "https://github.com/gchq/Utilitarian",
             "https://www.npmjs.com/package/cyberchef"
         ]
     },
     {
         "@context": "http://schema.org",
         "@type": "WebSite",
-        "url": "https://gchq.github.io/CyberChef/",
-        "name": "CyberChef",
+        "url": "https://gchq.github.io/Utilitarian/",
+        "name": "Utilitarian",
         "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://gchq.github.io/CyberChef/?op={operation_search_term}",
+            "target": "https://gchq.github.io/Utilitarian/?op={operation_search_term}",
             "query-input": "required name=operation_search_term"
         }
     }

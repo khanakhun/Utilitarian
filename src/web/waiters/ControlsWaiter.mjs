@@ -9,15 +9,15 @@ import { eolSeqToCode } from "../utils/editorUtils.mjs";
 
 
 /**
- * Waiter to handle events related to the CyberChef controls (i.e. Calculate, Step, Save, Load etc.)
+ * Waiter to handle events related to the Utilitarian controls (i.e. Calculate, Step, Save, Load etc.)
  */
 class ControlsWaiter {
 
     /**
      * ControlsWaiter constructor.
      *
-     * @param {App} app - The main view object for CyberChef.
-     * @param {Manager} manager - The CyberChef event manager.
+     * @param {App} app - The main view object for Utilitarian.
+     * @param {Manager} manager - The Utilitarian event manager.
      */
     constructor(app, manager) {
         this.app = app;
@@ -120,7 +120,7 @@ class ControlsWaiter {
      * @param {boolean} includeInput - Whether to include the input in the URL.
      * @param {string} input
      * @param {Object[]} [recipeConfig] - The recipe configuration object array.
-     * @param {string} [baseURL] - The CyberChef URL, set to the current URL if not included
+     * @param {string} [baseURL] - The Utilitarian URL, set to the current URL if not included
      * @returns {string}
      */
     generateStateUrl(includeRecipe, includeInput, input, recipeConfig, baseURL) {
@@ -261,7 +261,7 @@ class ControlsWaiter {
         localStorage.savedRecipes = JSON.stringify(savedRecipes);
         localStorage.recipeId = recipeId;
 
-        this.app.alert(`Recipe saved as "${recipeName}".`, 3000);
+        this.app.alert(`Chain saved as "${recipeName}".`, 3000);
     }
 
 
@@ -335,7 +335,7 @@ class ControlsWaiter {
 
 
     /**
-     * Loads the selected recipe and populates the Recipe with its operations.
+     * Loads the selected recipe and populates the Chain with its operations.
      */
     loadButtonClick() {
         try {
@@ -389,7 +389,7 @@ class ControlsWaiter {
         e.preventDefault();
 
         const reportBugInfo = document.getElementById("report-bug-info");
-        const saveLink = this.generateStateUrl(true, true, null, null, "https://gchq.github.io/CyberChef/");
+        const saveLink = this.generateStateUrl(true, true, null, null, "https://gchq.github.io/Utilitarian/");
 
         if (reportBugInfo) {
             reportBugInfo.innerHTML = `* Version: ${PKG_VERSION}

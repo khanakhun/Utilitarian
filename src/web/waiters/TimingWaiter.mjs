@@ -12,8 +12,8 @@ class TimingWaiter {
     /**
      * TimingWaiter constructor.
      *
-     * @param {App} app - The main view object for CyberChef.
-     * @param {Manager} manager - The CyberChef event manager.
+     * @param {App} app - The main view object for Utilitarian.
+     * @param {Manager} manager - The Utilitarian event manager.
      */
     constructor(app, manager) {
         this.app = app;
@@ -147,7 +147,7 @@ class TimingWaiter {
             overhead = total - inputEncoding - outputDecoding - input.bakeDuration;
 
         return `Input encoding: ${inputEncoding}ms
-Recipe duration: ${input.bakeDuration}ms
+Chain duration: ${input.bakeDuration}ms
 Output decoding: ${outputDecoding}ms
 <span class="small">Threading overhead: ${overhead}ms</span>`;
     }

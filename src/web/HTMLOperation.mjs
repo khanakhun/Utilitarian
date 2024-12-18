@@ -19,8 +19,8 @@ class HTMLOperation {
      *
      * @param {string} name - The name of the operation.
      * @param {Object} config - The configuration object for this operation.
-     * @param {App} app - The main view object for CyberChef.
-     * @param {Manager} manager - The CyberChef event manager.
+     * @param {App} app - The main view object for Utilitarian.
+     * @param {Manager} manager - The Utilitarian event manager.
      */
     constructor(name, config, app, manager) {
         this.app         = app;
@@ -83,9 +83,9 @@ class HTMLOperation {
 
         html += `</div>
         <div class="recip-icons">
-            <i class="material-icons breakpoint" title="Set breakpoint" break="false" data-help-title="Setting breakpoints" data-help="Setting a breakpoint on an operation will cause execution of the Recipe to pause when it reaches that operation.">pause</i>
-            <i class="material-icons disable-icon" title="Disable operation" disabled="false" data-help-title="Disabling operations" data-help="Disabling an operation will prevent it from being executed when the Recipe is baked. Execution will skip over the disabled operation and continue with subsequent operations.">not_interested</i>
-            <i class="material-icons hide-args-icon" title="Hide operation's arguments" hide-args="false" data-help-title="Hide operation's arguments" data-help="Hiding an operation's argument will save space in the Recipe window. Execution will still take place with the selected argument options.">keyboard_arrow_up</i>
+            <i class="material-icons breakpoint" title="Set breakpoint" break="false" data-help-title="Setting breakpoints" data-help="Setting a breakpoint on an operation will cause execution of the Chain to pause when it reaches that operation.">pause</i>
+            <i class="material-icons disable-icon" title="Disable operation" disabled="false" data-help-title="Disabling operations" data-help="Disabling an operation will prevent it from being executed when the Chain is baked. Execution will skip over the disabled operation and continue with subsequent operations.">not_interested</i>
+            <i class="material-icons hide-args-icon" title="Hide operation's arguments" hide-args="false" data-help-title="Hide operation's arguments" data-help="Hiding an operation's argument will save space in the Chain window. Execution will still take place with the selected argument options.">keyboard_arrow_up</i>
         </div>
         <div class="clearfix">&nbsp;</div>`;
 

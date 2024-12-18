@@ -183,7 +183,7 @@ TestRegister.addApiTests([
     it("chef.bake: should complain if recipe isnt a valid object", () => {
         assert.throws(() => chef.bake("some input", 3264), {
             name: "TypeError",
-            message: "Recipe can only contain function names or functions"
+            message: "Chain can only contain function names or functions"
         });
     }),
 

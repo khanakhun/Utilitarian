@@ -61,7 +61,7 @@ class NodeRecipe {
             }
             return sanitisedOp;
         } else {
-            throw new TypeError("Recipe can only contain function names or functions");
+            throw new TypeError("Chain can only contain function names or functions");
         }
     }
 

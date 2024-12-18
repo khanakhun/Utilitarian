@@ -254,7 +254,7 @@ class Recipe  {
             }
         }
 
-        log.debug("Recipe complete");
+        log.debug("Chain complete");
         return this.opList.length;
     }
 

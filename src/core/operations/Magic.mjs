@@ -92,7 +92,7 @@ class Magic extends Operation {
                 class='table table-hover table-sm table-bordered'
                 style='table-layout: fixed;'>
             <tr>
-                <th>Recipe (click to load)</th>
+                <th>Chain (click to load)</th>
                 <th>Result snippet</th>
                 <th>Properties</th>
             </tr>`;
